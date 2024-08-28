@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giovanna Baptista</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--Criando o cabeçalho-->
+    <header>
+        <a href="index.html">
+            <img src="recursos/foto-icone.png" alt="" class="giovanna-foto">
+        </a>
+        <nav class="container-nav-principal">
+            <ul>
+                <li><a href="#sobre" class="link-menu">SOBRE</a></li>
+                <li><a href="#projetos" class="link-menu">PORTFÓLIO</a></li>
+                <li><a href="#contato" class="link-menu">CONTATO</a></li>
+                <li><a href="#formacao" class="link-menu">FORMAÇÃO</a></li>
+            </ul>
+            <div class="alterar-tema">
+                <button id="btn-alterar-tema" class="btn-header">
+                    <img id="img-icone" alt="Icone" class="icones-header" src="./recursos/lua-icone.png">
+                </button>
+            </div>
+            <button id="btn-abrir-menu" class="btn-header">
+                <img src="./recursos/menu-icone.png" class="icones-header" id="img-botao-menu" alt="botão menu">
+            </button>
+        </nav>
+        <div class="container-menu-lateral fechado" id="container-menu-lateral">
+            <button class="btn-fechar-menu" id="btn-fechar-menu">X</button>
+            <nav>
+                <ul>
+                    <li><a href="#sobre" class="link-menu">SOBRE</a></li>
+                    <li><a href="#projetos" class="link-menu">PORTFÓLIO</a></li>
+                    <li><a href="#contato" class="link-menu">CONTATO</a></li>
+                    <li><a href="#formacao" class="link-menu">FORMAÇÃO</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--Criando o conteúdo principal-->
+    <main>
+        <!--Criando uma introdução-->
+        <section class="inicio">
+            <div class="descricao">
+                <h1>GIOVANNA BAPTISTA</h1>
+                <p>Buscando estágio em desenvolvimento web front-end.</p>
+                <p>Quero aplicar meus conhecimentos e contribuir positivamente para a empresa.</p>
+            </div>
+            <div class="conhecimentos">
+                <div class="tecnologias">
+                    <h2>TECNOLOGIAS</h2>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS (básico)</li>
+                        <li>JAVASCRIPT (básico)</li>
+                        <li>GIT / GITHUB</li>
+                    </ul>
+                </div>
+                <div class="idiomas">
+                    <h2>IDIOMAS</h2>
+                    <ul>
+                        <li>INGLÊS (básico)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!--Criando uma seção sobre mim-->
+        <section class="sobre" id="sobre">
+            <div class="textos">
+                <h2>SOBRE MIM</h2>
+                <p>Crio projetos utilizando HTML5, CSS e Javascript. Tenho muita vontade de aprender e de me aperfeiçoar
+                    cada vez mais na área de desenvolvimento web. Sou paciente e muito dedicada no que faço. Além dos
+                    estudos, meus hobbies são jogar, desenhar e me exercitar. </p>
+            </div>
+            <img src="recursos/foto-icone.png" alt="" class="giovanna-foto">
+        </section>
+        <!--Criando uma seção com o portfólio-->
+        <section class="projetos" id="projetos">
+            <h2>MEUS PROJETOS</h2>
+            <div class="bloco-projeto">
+                <img src="recursos/capa-adocao-pets.png" alt="" class="imagem-projeto">
+                <div class="projeto-textos">
+                    <h3>Projeto Adoção de Pets</h3>
+                    <p>Projeto em construção para atividade extensionista da faculdade. Tem o objetivo de facilitar a
+                        adoção de pets que precisam de um lar para morar, desenvolvendo um site com um sistema de
+                        cadastro gratuito aonde ONGs, protetores independentes ou pessoas possam divulgar os animais.
+                    </p>
+                    <button><a href="https://giovannabaptistaj.github.io/projeto-adocao-pets/index.html"
+                            target="_blank">Abrir projeto</a></button>
+                </div>
+            </div>
+        </section>
+        <!--Criando uma seção com um formulário de contato-->
+        <section class="contato" id="contato">
+            <h2>CONTATO</h2>
+            <form action="">
+                <label for="nome">Nome</label>
+                <input id="nome" type="text" placeholder="Insira o seu nome">
+                <label for="e-mail">E-mail</label>
+                <input id="e-mail" type="email" placeholder="Insira o seu e-mail">
+                <label for="mensagem">Mensagem</label>
+                <textarea name="" id="mensagem" placeholder="Digite sua mensagem" rows="5"></textarea>
+                <button>Enviar</button>
+            </form>
+        </section>
+        <!--Criando uma seção com as formações acadêmicas-->
+        <section class="formacao" id="formacao">
+            <h2>FORMAÇÕES ACADÊMICAS</h2>
+            <div class="bloco-info">
+                <h3>TECNÓLOGO EM ANÁLISE E DESENVOLVIMENTO DE SISTEMAS</h3>
+                <p>UNINTER (2024 - 2026)</p>
+            </div>
+            <div class="bloco-info">
+                <h3>CURSO TÉCNICO PROGRAMADOR FULL-STACK</h3>
+                <p>SENAI (2022 - 2023)</p>
+            </div>
+            <h2>CURSOS COMPLEMENTARES</h2>
+            <div class="bloco-info">
+                <h3>HTML5 COMPLETO e com projetos básicos para a web.</h3>
+                <p>UDEMY - HCODE (2022 - 2023)</p>
+            </div>
+        </section>
+    </main>
+    <!--Criando o rodapé-->
+    <footer>
+        <h2>Giovanna Baptista</h2>
+        <p>giovannabap.junges@gmail.com</p>
+        <div class="redes-sociais">
+            <a href="https://api.whatsapp.com/send?phone=5551982425141" target="_blank">
+                <img src="recursos/whatsapp-icone.png" alt="icone-whatsapp">
+            </a>
+            <a href="https://github.com/GiovannaBaptistaJ" target="_blank">
+                <img src="recursos/github-icone.png" alt="icone-github">
+            </a>
+        </div>
+        <p></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

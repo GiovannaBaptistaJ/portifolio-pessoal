@@ -1,0 +1,468 @@
+/* Resets */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+label {
+    font-family: Coiny;
+    color: var(--text-color);
+    transition: color 0.3s ease;
+
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+h2 {
+    text-decoration: #FF7878 underline;
+    font-size: 35px;
+    padding: 5px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+p,
+li {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    color: var(--text-color);
+    transition: color 0.3s ease;
+}
+
+li {
+    list-style-type: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: Coiny;
+    color: #FF7878;
+
+}
+.giovanna-foto {
+    max-width: 100%;
+
+}
+
+/* Criando variáveis */
+:root {
+    --background-color1: white;
+    --background-color2: #F2F2F2;
+    --text-color: rgb(35, 35, 35);
+    --icons-invert: invert(0)
+}
+/* Criando variáveis para tema escuro */
+.dark {
+    --background-color1: #292929;
+    --background-color2: #131313;
+    --text-color: white;
+    --icons-invert: invert(1)
+}
+
+/* Estilos do header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 40px;
+    background-color: var(--background-color1);
+    transition: background-color 0.3s ease;
+    flex-wrap: wrap;
+}
+
+header .giovanna-foto {
+    height: 50px;
+    border: 4px solid #FF7878;
+    border-radius: 30px;
+
+}
+
+header nav a:hover {
+    transition: 1s;
+    border-bottom: 2px solid #FF7878;
+}
+
+.container-nav-principal {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+
+}
+
+.container-nav-principal ul {
+    display: flex;
+    gap: 20px;
+}
+.container-nav-principal .icones-header {
+    filter: var(--icons-invert);
+}
+
+#container-menu-lateral {
+    position: fixed;
+    top: 0px;
+    display: none;
+    width: 250px;
+    background: #333;
+    transition: right 0.3s ease;
+    z-index: 10;
+
+}
+
+#container-menu-lateral.aberto {
+    right: 0px;
+}
+
+#container-menu-lateral.fechado {
+    right: -250px;
+}
+
+#container-menu-lateral nav ul li {
+    margin: 20px 0;
+}
+
+#container-menu-lateral nav ul li a {
+    display: block;
+    padding: 10px;
+}
+
+.btn-header {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.alterar-tema button:focus {
+    outline: none;
+}
+
+.icones-header {
+    width: 30px;
+}
+
+#btn-abrir-menu {
+    display: none;
+}
+
+/* Estilos da seção introdução */
+.inicio {
+    background-color: var(--background-color2);
+    padding: 40px 200px;
+    transition: background-color 0.3s ease;
+    align-items: center;
+}
+
+.descricao {
+    text-align: center;
+}
+
+.descricao h1 {
+    font-size: 64px;
+}
+
+.conhecimentos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    justify-content: center;
+    justify-items: center;
+    padding-top: 40px;
+}
+
+.tecnologias {
+    text-align: center;
+}
+
+.idiomas {
+    text-align: center;
+}
+/* Estilos da seção sobre mim */
+.sobre {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    justify-items: center;
+    padding: 40px 200px;
+    background-color: var(--background-color1);
+    transition: background-color 0.3s ease;
+
+}
+
+.sobre p {
+    text-align: justify;
+}
+
+.sobre img {
+    height: 80%;
+    border: 7px solid #FF7878;
+    border-radius: 426px;
+}
+/* Estilos da seção com o portfólio */
+.projetos {
+    background-color: var(--background-color2);
+    transition: background-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 200px;
+}
+
+.bloco-projeto {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    padding: 40px 0px;
+    gap: 20px;
+
+}
+
+.imagem-projeto {
+    max-width: 100%;
+    height: 300px;
+}
+
+.projeto-textos h3,
+.projeto-textos p {
+    padding: 10px 0px;
+}
+
+
+.projeto-textos button {
+    background-color: #fcabab;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 4px 9px;
+
+}
+
+.bloco-projeto button:hover {
+    transition: 1s;
+    width: 210px;
+    height: 60px;
+    background-color: #FF7878;
+
+}
+
+.bloco-projeto button a {
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(35, 35, 35);
+
+}
+/* Estilos da seção com o formulário de contato */
+.contato {
+    padding: 40px 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color1);
+    transition: background-color 0.3s ease;
+
+}
+
+.contato form {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0px;
+
+}
+
+.contato form input {
+    width: 600px;
+    height: 40px;
+
+}
+
+.contato form label {
+    font-size: 25px;
+}
+
+.contato form input,
+textarea {
+    background-color: #e8e7e7;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+}
+
+.contato form textarea {
+    resize: none;
+}
+
+.contato form button {
+    align-self: center;
+    background-color: #fcabab;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 4px 9px;
+    margin-top: 30px;
+}
+
+.contato form button:hover {
+    background-color: #FF7878;
+    cursor: pointer;
+    transition: 1s;
+    width: 210px;
+    height: 60px;
+}
+/* Estilos da seção com as formações acadêmicas */
+.formacao {
+    background-color: var(--background-color2);
+    transition: background-color 0.3s ease;
+    padding: 60px 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.bloco-info {
+    background-color: #fcabab;
+    width: 80%;
+    padding: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 4px 9px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+
+}
+
+.bloco-info p {
+    font-size: 15px;
+    color: rgb(35, 35, 35);
+}
+
+.bloco-info h3 {
+    color: rgb(35, 35, 35);
+
+}
+/* Estilos da seção com o rodapé */
+footer {
+    padding: 40px 100px;
+    background-color: var(--background-color1);
+    transition: background-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+
+}
+
+footer p {
+    text-align: center;
+}
+
+footer .redes-sociais {
+    display: flex;
+    gap: 20px;
+}
+.redes-sociais a img {
+    max-width: 50px;
+}
+/* Ajustando para largura máxima de 750px para outros dispositivos */
+@media(max-width:750px) {
+    .container-nav-principal a {
+        display: none;
+    }
+
+    #container-menu-lateral {
+        display: block;
+        background-color: var(--background-color1);
+    }
+
+    #btn-abrir-menu {
+        display: block;
+    }
+
+    .btn-fechar-menu {
+        height: 30px;
+        width: 30px;
+        border-radius: 5px;
+        background-color: #FF7878;
+        border: none;
+        color: white;
+    }
+
+    .btn-fechar-menu:hover {
+        cursor: pointer;
+    }
+
+    .inicio,
+    .sobre,
+    .contato,
+    .projetos,
+    .formacao,
+    .footer {
+        padding: 40px 10px;
+        gap: 10px;
+    }
+
+    .projeto-textos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h3,
+    p {
+        text-align: center;
+    }
+
+    .descricao h1 {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    label {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .sobre img {
+        height: 200px;
+    }
+
+    .bloco-projeto h3 {
+        order: -1;
+    }
+
+    .bloco-info {
+        width: 300px;
+    }
+
+    .contato form input {
+        width: 350px;
+    }
+
+}
